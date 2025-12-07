@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "eda6e2d8-d982-4fca-bbdd-496a05398b3d",
+		"name": "DL-Project - MuiltiHopQA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46505606",
+		"_collection_link": "https://kokila-3412088.postman.co/workspace/Kokila's-Workspace~3e1109da-e821-4cbb-86f9-de62233372bd/collection/46505606-eda6e2d8-d982-4fca-bbdd-496a05398b3d?action=share&source=collection_link&creator=46505606"
+	},
+	"item": [
+		{
+			"name": "sample 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query\": \"Which is the company associated with the giving - New customers can get up to $1000 in bonus bets if they lose their first bet\",\n    \"top_k\": 2,\n    \"chain_length\": 2,\n    \"entailment_threshold\": 0.7,\n    \"eval_mode\": true,\n    \"num_hops\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/ask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sample 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": \"What is cryptocurrency ?\",\n  \"top_k\": 2,\n  \"chain_length\": 2,\n  \"entailment_threshold\": 0.7,\n  \"eval_mode\": true ,\n   \"num_hops\": 2\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/ask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ask"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
